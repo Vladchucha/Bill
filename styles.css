@@ -1,0 +1,387 @@
+/* public/css/styles.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background for the landing page */
+body {
+    background-color:  #ccc;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ /*   font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #2980b9, #8e44ad);   Nice gradient background 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;*/
+}
+
+/* Centering content on the page */
+.container {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Main heading */
+.container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Button styles (for links on landing page) */
+.container a {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db; /* Blue color for buttons */
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.container a:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Language menu */
+.language-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: white;
+}
+
+.language-menu ul {
+    list-style-type: none;
+}
+
+.language-menu ul li {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.language-menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.language-menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #3498db;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+.language-menu ul li:hover ul {
+    display: block;
+}
+
+.language-menu ul li ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.language-menu ul li ul li a:hover {
+    background-color: #2980b9;
+}
+
+/* Form container for login/register */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.1);  /* Transparent white */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;  /* Set a max width for the form */
+    text-align: center;
+}
+
+/* Form Heading */
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color:  #2980b9;
+}
+
+/* Input fields for forms */
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;  /* Rounded input fields */
+    background-color: #fff;
+    font-size: 16px;
+}
+
+/* Submit button for forms */
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;  /* Blue button */
+    border: none;
+    border-radius: 25px;
+    color:  #c0392b;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #2980b9;  /* Darker blue on hover */
+}
+
+/* Link styles in form (for login/register page navigation) */
+.form-container a {
+    color: #fff;
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.form-container a:hover {
+    color: #f1c40f;  /* Gold color on hover */
+}
+/***********************/
+/* public/css/styles.css */
+
+/* Main container for the menu */
+.menu-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center the menu horizontally */
+}
+
+/* Main menu */
+/* Main container for the menu */
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Each menu section */
+.menu-section {
+    width: 25%;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.menu-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+/* Each menu item within a section */
+.menu-item {
+    margin: 10px 0;
+}
+
+.menu-item a {
+    display: block;
+    padding: 10px;
+    background-color: #3498db; /* Blue background */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item a:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Logout button */
+.logout-button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c0392b;
+}
+/* Style for the carrier form */
+
+.carrier-form {
+    max-width: 800px;  /* Increase the max width */
+    width: 80%;  /* Form takes 80% of the screen width */
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;  /* Make input and textarea full width */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Textarea specific styles */
+.form-group textarea {
+    height: 100px;
+    resize: vertical;  /* Allow vertical resize */
+}
+
+button[type="submit"] {
+    width: 100%;  /* Make the submit button full width */
+    padding: 12px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+/* Styling for the back-to-menu button */
+.back-to-menu-button,
+.generate-pdf-button {
+    display: inline-block;
+    margin: 20px 10px;
+    padding: 10px 20px;
+    background-color: #3498db;  /* Blue color for the button */
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-menu-button:hover,
+.generate-pdf-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.back-to-menu-button {
+    background-color: #2ecc71;  /* Green for the menu button */
+}
+
+.back-to-menu-button:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}
+
+/* Success message -add carrier*/
+p.success {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Error message  add carrier*/
+p.error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Container for the invoice */
+.bill-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Invoice Header */
+.bill-header p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Bill Items Table */
+.bill-items-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.bill-items-table th,
+.bill-items-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.bill-items-table th {
+    background-color: #3498db;
+    color: white;
+}
+
+.bill-items-table td {
+    font-size: 14px;
+}
+
+/* Bill Summary */
+.bill-summary {
+    margin-top: 20px;
+}
+
+.bill-summary p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.bill-summary p strong {
+    display: inline-block;
+    min-width: 120px;
+}
+
+/* Make sure the layout adjusts for smaller screens */
+@media (max-width: 768px) {
+    .menu-section {
+        width: 100%;
+    }
+}
